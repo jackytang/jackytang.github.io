@@ -8,7 +8,7 @@ tags: [pentaho]
 
 I’ve struggled several hours trying to figure out how to get the pentaho data integration app running on my macOS BigSur 11.2.3. When I ran spoon.sh or spoon.command in the terminal, the interface will eventually show up for a second but then will crash immediately.
 
-![](/assets/img/post/2021/pentaho-1.png)
+![](https://cdn.jsdelivr.net/gh/jackytang/jackytang.github.io@gh-pages/assets/img/post/2021/pentaho-1.png)
 
 I was finally able to get it to run with Eris’s method. It’s seems that we need to tell Pentaho application specifically where java is located. So starting over, my final steps are:
 
@@ -104,7 +104,7 @@ cp ~/Downloads/swt.jar /usr/local/Caskroom/data-integration/9.1.0.0-324/data-int
 
 ## Run Data Integration app or spoon.sh
 
-![](/assets/img/post/2021/pentaho-2.png)
+![](https://cdn.jsdelivr.net/gh/jackytang/jackytang.github.io@gh-pages/assets/img/post/2021/pentaho-2.png)
 
 ## References
 
