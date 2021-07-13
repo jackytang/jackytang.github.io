@@ -50,11 +50,12 @@ data-integration/Data Integration.app (App)
 install: 37 (30 days), 136 (90 days), 651 (365 days)
 ```
 
-## Install Java
+## Install Oracle Java SE Runtime Environment 8u202
+
+Download [Oracle Java SE Runtime Environment 8u202](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
 
 ```bash
-brew tap adoptopenjdk/openjdk
-brew cask install adoptopenjdk8
+tar -zxvf ~/Downloads/jre-8u202-macosx-x64.tar.gz -C /usr/local/Caskroom/data-integration/9.1.0.0-324/data-integration/
 ```
 
 ## Modify JavaApplicationStub
@@ -89,17 +90,15 @@ code ./spoon.sh
 
 ```bash
 # Add environment variables
-export PENTAHO_JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/"
+export PENTAHO_JAVA_HOME="/usr/local/Caskroom/data-integration/9.1.0.0-324/data-integration/jre1.8.0_202.jre/Contents/Home/"
 ```
-
-## Download Standard Widget Toolkit For Mac OS X (Cocoa)
-
-[https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.swt.cocoa.macosx.x86_64](https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.swt.cocoa.macosx.x86_64)
 
 ## Replace Standard Widget Toolkit For Mac OS X (Cocoa)
 
+Download [org.eclipse.swt.cocoa.macosx.x86_64-3.110.0.jar](https://repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.swt.cocoa.macosx.x86_64/3.110.0/org.eclipse.swt.cocoa.macosx.x86_64-3.110.0.jar)
+
 ```bash
-cp ~/Downloads/swt.jar /usr/local/Caskroom/data-integration/9.1.0.0-324/data-integration/libswt/osx64/swt.jar
+cp ~/Downloads/org.eclipse.swt.cocoa.macosx.x86_64-3.110.0.jar /usr/local/Caskroom/data-integration/9.1.0.0-324/data-integration/libswt/osx64/swt.jar
 ```
 
 ## Run Data Integration app or spoon.sh
